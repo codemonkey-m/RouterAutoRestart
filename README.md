@@ -1,5 +1,5 @@
 # RouterAutoRestart
-适用于中兴ZXHN F650设备自动重启的脚本.
+适用于中兴ZXHN F650光猫设备自动重启的脚本.
 
 adminuser   账号字段     
 adminpwd    密码字段     
