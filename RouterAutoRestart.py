@@ -28,7 +28,7 @@ class TimeMgr:
                 return True
         else:
             if datetime.datetime.now().day != self.nCurDay:
-                nCurDay = datetime.datetime.now().day
+                self.nCurDay = datetime.datetime.now().day
                 self.bIsNowDay = True
 
         return False
