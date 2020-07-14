@@ -13,23 +13,23 @@ nRefresTime = 4
 
 class TimeMgr:
     #是否新的一天
-    bIsNowDay = False
+    bIsNewDay = False
     #今天的日期
     nCurDay = 0
 
     def __init__(self):
-        self.bIsNowDay = True
+        self.bIsNewDay = True
         self.nCurDay = datetime.datetime.now().day
 
     def Check(self):
-        if self.bIsNowDay:
+        if self.bIsNewDay:
             if datetime.datetime.now().hour == nRefresTime:
-                self.bIsNowDay = False
+                self.bIsNewDay = False
                 return True
         else:
             if datetime.datetime.now().day != self.nCurDay:
                 self.nCurDay = datetime.datetime.now().day
-                self.bIsNowDay = True
+                self.bIsNewDay = True
 
         return False
 
